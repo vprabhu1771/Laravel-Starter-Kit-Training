@@ -487,19 +487,25 @@ Run these again:
 ### Terminal 1
 
 ```bash
-php artisan serve
+php artisan reverb:start
 ```
 
 ### Terminal 2
 
 ```bash
-php artisan reverb:start
+composer run dev
 ```
 
 ### Terminal 3
 
 ```bash
-npm run dev
+php artisan queue:work
+```
+
+### Terminal 4
+
+```bash
+php artisan app:order-status-update
 ```
 
 ---
